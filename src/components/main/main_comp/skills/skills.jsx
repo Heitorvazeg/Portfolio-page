@@ -1,6 +1,17 @@
+import './skills.css'
+
 function Skills() {
+    const arraySkills = [{}, {}]
     return (
-        <section id="skills"></section>
+        <section id="skills">
+            <div className="blocoSkills">
+                <h1>Skills</h1>
+                <div className="skill">
+                    <img src="" alt="" />
+                    <p></p>
+                </div>
+            </div>
+        </section>
     )
 }
 

@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    gap: 35rem;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsl(0, 0%, 12%), hsl(0, 0%, 18%), hsl(0, 0%, 12%));
+    color: white;
+    width: 100vw;
+    height: 3rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttonH {
+    border-radius: 15px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border: none;
+    text-decoration: none;
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: hsl(0, 0%, 90%);
+    }
+    &:active {
+        background-color: hsl(0, 0%, 100%);
+    }
+}

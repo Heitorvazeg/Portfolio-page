@@ -1,0 +1,21 @@
+#skills {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, hsl(0, 0%, 8%), hsl(0, 0%, 17%), hsl(0, 0%, 8%));
+    width: 100vw;
+    height: 15rem;
+}
+
+.blocoSkills {
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 80%;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.skill {
+
+}

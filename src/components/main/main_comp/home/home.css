@@ -1,0 +1,8 @@
+#home {
+    background-image: url('../../../../assets/back-portfolio.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-image: ((1600px, 1600px));
+    padding-top: 5rem;
+    color: white;
+}

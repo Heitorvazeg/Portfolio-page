@@ -1,8 +1,9 @@
+import './home.css'
 import Texting from "../texting";
 
 function Home() {
     return(
-        <section id="home" style={{backgroundImage: 'url("../../../assets/back-portifolio.jpg")'}}>
+        <section id="home">
             <Texting text="Hi! I'm Heitor Vaz, a Software Engineer."></Texting>
             <div className="sobre">
                 <img src="" alt="" />
