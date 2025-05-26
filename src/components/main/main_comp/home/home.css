@@ -1,8 +1,21 @@
-#home {
+.home {
     background-image: url('../../../../assets/back-portfolio.jpg');
     background-size: cover;
     height: 100vh;
     background-image: ((1600px, 1600px));
     padding-top: 5rem;
     color: white;
+    padding: 3rem;
+}
+
+.welcome {
+    background: linear-gradient(90deg, hsl(0, 0%, 30%), hsl(0, 0%, 40%), hsl(0, 0%, 30%));
+    width: 20rem;
+    height: 3rem;
+    margin: 2rem;
+    margin-top: 4rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

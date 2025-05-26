@@ -1,8 +1,30 @@
+import { useEffect, useState } from "react";
 import "./header.css"
 
 function Header() {
+    const [estaNoTopo, setEstaNoTopo] = useState(true);
+
+    useEffect(() => {
+        const handleRolagem = () => {
+            if (window.scrollY === 0) {
+                setEstaNoTopo(true);
+            }
+            else {
+                setEstaNoTopo(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleRolagem);
+        handleRolagem();
+
+
+        return () => {
+            window.removeEventListener('scroll', handleRolagem);
+        }
+    }, [])
+    
     return (
-        <header>
+        <header className= {estaNoTopo ? "header-topo" : "header-rolou"}>
             <h1>Dev</h1>
             <div className="links">
                 <div className="navigation">

@@ -1,11 +1,28 @@
-header {
+.header-topo {
     display: flex;
     flex-direction: row;
     position: fixed;
-    gap: 35rem;
+    top: 0;
+    gap: 40%;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, hsl(0, 0%, 12%), hsl(0, 0%, 18%), hsl(0, 0%, 12%));
+    background-color: transparent;
+    transition: background-color 0.5s cubic-bezier(0.4, 0.1, 1, 1);
+    color: white;
+    width: 100vw;
+    height: 3rem;
+}
+
+.header-rolou {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    gap: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(0, 0%, 10%);
+    transition: background-color 0.5s cubic-bezier(0.4, 0.1, 1, 1);
     color: white;
     width: 100vw;
     height: 3rem;
@@ -24,6 +41,12 @@ header {
     & a {
         text-decoration: none;
         color: white;
+        &:hover {
+            color: hsl(0, 0%, 80%);
+        }
+        &:active {
+            color: hsl(0, 0%, 70%);
+        }
     }
 }
 
@@ -45,9 +68,9 @@ header {
     }
     &:hover {
         cursor: pointer;
-        background-color: hsl(0, 0%, 90%);
+        background-color: hsl(0, 0%, 80%);
     }
     &:active {
-        background-color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 70%);
     }
 }
