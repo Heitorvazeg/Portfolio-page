@@ -1,0 +1,10 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, hsl(0, 0%, 0%), hsl(0, 0%, 5%));
+    height: 100vh;
+    background-image: ((1600px, 1600px));
+    padding-top: 5rem;
+    color: white;
+    padding: 2%;
+}

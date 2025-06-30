@@ -1,7 +1,7 @@
 #skills {
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, hsl(0, 0%, 8%), hsl(0, 0%, 17%), hsl(0, 0%, 8%));
+    background: linear-gradient(180deg, hsl(0, 0%, 0%), hsl(0, 0%, 5%));
     width: 100vw;
     height: auto;
 }
@@ -9,7 +9,7 @@
 .blocoSkills {
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     width: 80%;
     height: auto;
     margin: 2rem;

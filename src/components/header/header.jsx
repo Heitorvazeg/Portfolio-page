@@ -25,7 +25,7 @@ function Header() {
     
     return (
         <header className= {estaNoTopo ? "header-topo" : "header-rolou"}>
-            <h1>Dev</h1>
+            <div alt="Dev" className="icon"></div>
             <div className="links">
                 <div className="navigation">
                     <a href="#home"><p>Home</p></a>

@@ -1,5 +1,6 @@
 .home {
-    background-image: url('../../../../assets/back-portfolio.jpg');
+    position: relative;
+    background-image: url('../../../../assets/particulas_black.jpg');
     background-size: cover;
     height: 100vh;
     background-image: ((1600px, 1600px));
@@ -18,4 +19,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.textingDiv {
+    width: 70%;
+}
+
+.pDiv {
+    position: absolute;
+    bottom: 6rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgba(15, 15, 15, 0.6);
+    height: auto;
+    width: 60%;
+}
+
+.p {
+    width: 100%;
+    text-align: center;
 }
