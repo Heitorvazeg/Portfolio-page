@@ -80,8 +80,8 @@
 .icon {
     background-image: url("../../assets/icons/coding2.png");
     background-size: cover;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2rem;
+    height: 2rem;
     border: none;
     border-radius: 50%;
 }

@@ -3,8 +3,175 @@
     justify-content: center;
     background: linear-gradient(0deg, hsl(0, 0%, 0%), hsl(0, 0%, 5%));
     height: 100vh;
-    background-image: ((1600px, 1600px));
     padding-top: 5rem;
     color: white;
     padding: 2%;
+    overflow: hidden;
+}
+
+.contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagemContato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+    gap: 2rem;
+}
+
+.div {
+    height: 70%;
+    width: 45%;
+}
+
+.imagemContatar {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../assets/contactus.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0px 3px 3px black;
+    transition: transform 0.4s ease-in-out;
+    border: none;
+}
+
+.imagemContatar::before {
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 5, 0.95);
+    z-index: 1;
+    transition: all 0.4s ease-out;
+    border: none;
+}
+
+.descricaoHidden {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.imagemContatar:hover::before {
+    top: 0;
+}
+
+.imagemContatar:hover {
+    transform: scale(1.02);
+}
+
+.imagemContatar:hover .descricaoHidden {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.contatoContato {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 45%;
+}
+
+.contatoS {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contatoS:hover {
+    transform: scale(1.1);
+}
+
+.contatoS::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.contatoS:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.iconS {
+  font-size: 4rem;
+  color: black;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.contatoS:hover .iconS {
+  color: white;
+}
+
+.conteudoExpandido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.contatoS:hover .conteudoExpandido {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.conteudoExpandido button {
+  margin-top: 0.5rem;
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
 }

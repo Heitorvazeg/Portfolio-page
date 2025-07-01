@@ -46,6 +46,69 @@
     overflow: hidden;
 }
 
+.react {
+    background-image: url("../../../../assets/skills/react.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.go {
+    background-image: url("../../../../assets/skills/go.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.js {
+    background-image: url("../../../../assets/skills/javascript.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.py {
+    background-image: url("../../../../assets/skills/python.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.c {
+    background-image: url("../../../../assets/skills/cpluspus.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.htcs {
+    background-image: url("../../../../assets/skills/htcs.jpeg");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.sql {
+    background-image: url("../../../../assets/skills/sql.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.api {
+    background-image: url("../../../../assets/skills/api.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
+.gitghub {
+    background-image: url("../../../../assets/skills/gitghub.png");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+}
+
 .skill:hover {
     color: white;
 }

@@ -10,43 +10,43 @@ function Skills() {
                 <div className="skillBloco fade-in-section">
                     <div className="ternarioSkill">
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="react"></div>
                             <p>React.js</p>
                         </div>
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="go"></div>
                             <p>Go</p>
                         </div>
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="js"></div>
                             <p>Javascript</p>
                         </div>
                     </div>
                     <div className="ternarioSkill fade-in-section">
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="py"></div>
                             <p>Python</p>
                         </div>
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="c"></div>
                             <p>C++</p>
                         </div>
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="htcs"></div>
                             <p>HTML/CSS</p>
                         </div>
                     </div>
                     <div className="ternarioSkill fade-in-section">
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="sql"></div>
                             <p>SQL</p>
                         </div>
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="api"></div>
                             <p>APIs REST</p>
                         </div>
                         <div className="skill fade-in-section">
-                            <img src="" alt="" />
+                            <div className="gitghub"></div>
                             <p>Git/Github</p>
                         </div>
                     </div>
