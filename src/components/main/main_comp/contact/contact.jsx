@@ -4,11 +4,12 @@ function Contact() {
     return (
         <section id="contact" className="contact">
             <div className="contato">
-                <h1>Contato</h1>
+                <h1 className="h10">Contact</h1>
+                <h1 className="h10 fade-in-section">Get in touch for more information!</h1>
                 <div className="imagemContato fade-in-section">
                     <div className="div">
                         <div className="imagemContatar">
-                            <p className="descricaoHidden">Entre em contato conosco para mais informações!</p>
+                            <p className="p10 descricaoHidden">Hi! Got any questions or just want to chat? Feel free to reach out!</p>
                         </div>
                     </div>
 

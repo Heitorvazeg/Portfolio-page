@@ -11,9 +11,10 @@
 }
 
 .projetos {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 7rem;
     text-align: center;
     color: white;
     background-color: rgba(15, 15, 15, 0.9);
@@ -25,8 +26,80 @@
     border-radius: 20px;
 }
 
-.projeto {
-    width: 20rem;
-    background-color: aliceblue;
-    height: 20rem;
+.projetoRight {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 22rem;
+}
+
+.projetoLeft {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 22rem;
+}
+
+.imagemProjeto {
+    box-shadow: 0px 3px 3px black;
+    width: 45%;
+    height: 100%;
+    background-image: url("../../../../assets/971.jpg");
+}
+
+.d {
+    position: absolute;
+    right: 2rem;
+}
+
+.descricaoProjeto {
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pD {
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+}
+
+.ccts {
+    border-radius: 15px;
+    background-image: url("../../../../assets/ccts.png");
+    background-size: cover;
+    background-position: -5.2rem;
+}
+
+
+.ks {
+    border-radius: 15px;
+    background-image: url("../../../../assets/ks.png");
+    background-size: cover;
+    background-position: -5.2rem;
+}
+
+.web {
+    border-radius: 15px;
+    background-image: url("../../../../assets/web.png");
+    background-size: cover;
+    background-position: -0.5rem;
+}
+
+.py {
+    border-radius: 15px;
+    background-image: url("../../../../assets/py.png");
+    background-size: cover;
+    background-position: -1.0rem;
+}
+
+.alg {
+    border-radius: 15px;
+    background-image: url("../../../../assets/alg.png");
+    background-size: cover;
+    background-position: -0.2rem;
 }

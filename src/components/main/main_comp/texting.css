@@ -1,9 +1,14 @@
 span {
     font-size: 3.8rem;
-    animation: piscando 0.7s step-end infinite;
+    border-right: 2px solid white;
+    animation: piscando 0.8s step-end infinite;
 }
 
 @keyframes piscando {
-    0% {border-right: none}
-    50% {border-right: 2px solid white;}
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
 }
