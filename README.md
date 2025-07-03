@@ -12,7 +12,7 @@ Criar uma aplicação web leve e atrativa para destacar:
 - 🛠️ Projetos realizados
 - 📬 Formas de contato
 - 🖼️ Layout visual profissional e responsivo
-
+- 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -21,5 +21,4 @@ Criar uma aplicação web leve e atrativa para destacar:
 - 💅 CSS3 / Styled Components / Tailwind (dependendo do setup)
 - 📱 Design responsivo (mobile-first)
 - 📁 Deploy com GitHub Pages / Vercel / Netlify
-- 
 ---
