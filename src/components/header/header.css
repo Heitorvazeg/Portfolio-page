@@ -85,3 +85,31 @@
     border: none;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .header-rolou,
+    .header-topo {
+        gap: 5%;
+    }
+
+    .links {
+        gap: 2rem;
+    }
+
+    .navigation {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .header-rolou,
+    .header-topo {
+        flex-direction: column;
+        height: 7rem;
+    }
+
+    .links {
+        gap: 0.3rem;
+        flex-direction: column;
+    }
+}

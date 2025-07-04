@@ -103,3 +103,79 @@
     background-size: cover;
     background-position: -0.2rem;
 }
+
+@media (min-width: 1540px) {
+    .imagemProjeto {
+        background-position: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projetoLeft,
+    .projetoRight {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .descricaoProjeto {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .imagemProjeto {
+        background-position: 0;
+        position: static;
+        width: 90%;
+        height: 15rem;
+        margin-top: 1rem;
+    }
+
+    .d {
+        position: static;
+        right: auto;
+    }
+
+    .pD {
+        padding: 1rem;
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    .descricaoProjeto h1.hD {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagemProjeto {
+        height: 13rem;
+    }
+
+    .pD {
+        font-size: 0.85rem;
+    }
+
+    .descricaoProjeto h1.hD {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagemProjeto {
+        height: 10rem;
+    }
+
+    .pD {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .descricaoProjeto {
+        gap: 1rem;
+    }
+
+    .descricaoProjeto h1.hD {
+        font-size: 1.1rem;
+    }
+}

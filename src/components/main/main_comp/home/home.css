@@ -4,7 +4,7 @@
     position: relative;
     background-image: url('../../../../assets/particulas_black.jpg');
     background-size: cover;
-    height: 100vh;
+    height: auto;
     background-image: ((1600px, 1600px));
     padding-top: 5rem;
     color: white;
@@ -29,13 +29,14 @@
 
 .sobre {
     width: 100%;
-    height: 20rem;
+    height: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 25%;
 }
 
 .pDiv {
-    position: absolute;
     bottom: 4rem;
     margin-top: 4rem;
     padding: 1rem;
@@ -51,10 +52,7 @@
 }
 
 .atomo {
-    position: absolute;
     display: flex;
-    right: 8rem;
-    bottom: 7rem;
     width: 13rem;
     height: 13rem;
     background-image: url("../../../../assets/atom.jpg");
@@ -70,5 +68,48 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1540px) {
+    .p {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 1016px) {
+    .home {
+        height: auto;
+    }
+
+    .atomo {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        align-items: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .pDiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+    .p {
+        font-size: 0.8rem;
+    }
+
+    .welcome {
+        margin-top: 5rem;
     }
 }

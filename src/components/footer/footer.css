@@ -18,3 +18,27 @@
     background-size: cover;
     border-radius: 50%;
 }
+
+@media (max-width: 1020px) {
+    .footer {
+        gap: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        gap: 30%;
+    }
+}
+
+@media (max-width: 468px) {
+    .footer {
+        gap: 5%;
+    }
+
+    .imageLogoFooter {
+        width: 3rem;
+        height: 3rem;
+    }
+}
