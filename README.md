@@ -18,7 +18,7 @@ Criar uma aplicação web leve e atrativa para destacar:
 ## 🛠️ Tecnologias Utilizadas
 
 - ⚛️ React.js (com Hooks e Componentes funcionais)
-- 💅 CSS3 / Styled Components / Tailwind (dependendo do setup)
+- 💅 CSS3
 - 📱 Design responsivo (mobile-first)
-- 📁 Deploy com GitHub Pages / Vercel / Netlify
+- 📁 Deploy com Netlify
 ---
