@@ -12,7 +12,6 @@ Criar uma aplicação web leve e atrativa para destacar:
 - 🛠️ Projetos realizados
 - 📬 Formas de contato
 - 🖼️ Layout visual profissional e responsivo
-- 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
