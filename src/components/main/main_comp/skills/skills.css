@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, hsl(0, 0%, 0%), hsl(0, 0%, 5%));
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -56,14 +56,33 @@
 
 .imageS {
     transition: all 0.4s ease;
+    width: 100%;
+    height: 70%;
+    background-position: center center;   /* <-- centraliza */
+    background-repeat: no-repeat;          /* <-- evita repetição */
+    background-size: cover;              /* <-- ajusta mantendo proporção */
+    background-origin: content-box;
+    background-clip: content-box;
 }
 
-.skill:hover .imageS {
-    height: 0%;
+@media (hover: hover) and (pointer: fine) {
+  .skill:hover .imageS {
+        transform: translateY(-120%) scale(.98); /* sobe e reduz levemente */
+        opacity: 0;
+        height: 0%;
+    }
 }
 
-.skill:hover {
-    transform: scale(1.1);
+
+@media (max-width: 768px) {
+  .skill:hover .imageS {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imageS, .skill { transition: none; transform: none; opacity: 1; }
 }
 
 .pS {
@@ -84,70 +103,51 @@
 
 .react {
     background-image: url("../../../../assets/skills/react.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .go {
     background-image: url("../../../../assets/skills/go.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .js {
     background-image: url("../../../../assets/skills/javascript.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .pyt {
     background-image: url("../../../../assets/skills/python.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .c {
     background-image: url("../../../../assets/skills/cpluspus.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .htcs {
     background-image: url("../../../../assets/skills/htcs.jpeg");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .sql {
-    background-image: url("../../../../assets/skills/sql.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
+    background-image: url("../../../../assets/skills/sql.png");;
 }
 
 .api {
     background-image: url("../../../../assets/skills/api.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 .gitghub {
     background-image: url("../../../../assets/skills/gitghub.png");
-    width: 100%;
-    height: 70%;
-    background-size: cover;
 }
 
 @media (min-width: 1540px) {
     .skill {
-        height: 19rem;
+        height: 23rem;
+    }
+
+    .pS {
+        padding-top: 3rem;
+    }
+
+    .pK {
+        padding: 2rem;
     }
 }
 
@@ -189,23 +189,22 @@
     .ternarioSkill {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .skill {
         width: 70%;
-        height: 25rem;
-    }
-
-    .skill:hover .imageS{
-        height: 70%;
+        height: 12rem;
+        margin-bottom: 2rem;
     }
 
     .pS {
+        padding-top: 2rem;
         font-size: 2rem;
     }
 
     .pK {
+        padding-top: 2rem;
         font-size: 0.8rem;
     }
 }
@@ -229,10 +228,6 @@
 @media (max-width: 360px) {
     .skill {
         height: 13rem;
-    }
-
-    .skill:hover .imageS {
-        height: 0%;
     }
 
     .pS {
